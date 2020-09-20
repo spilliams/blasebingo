@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Blaseball Blingo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="favicon.png" sizes="180x180">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="bingo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="card">
+        <div id="title">Blaseball Blingo</div>
+        <div id="bingo">
+            <div class="tile"><div class="tile-text gen">The Garages have released a new album!</div></div>
+            <div class="tile"><div class="tile-text gen">Slowmode is enabled.</div></div>
+            <div class="tile"><div class="tile-text gen">New modification with zero explanation</div></div>
+            <div class="tile"><div class="tile-text gen">#PARTYTIME</div></div>
+            <div class="tile"><div class="tile-text gen">The Tigers suffer a tragedy</div></div>
+
+            <div class="tile"><div class="tile-text gen">Incineration</div></div>
+            <div class="tile"><div class="tile-text gen">Everyone rallies behind<br>one team's blasphemy</div></div>
+            <div class="tile"><div class="tile-text gen">Yummy Reaction from peanuts</div></div>
+            <div class="tile"><div class="tile-text gen">The Commissioner tweets "uh" or "what"</div></div>
+            <div class="tile"><div class="tile-text gen">SHUTOUT</div></div>
+
+            <div class="tile"><div class="tile-text gen">Jaylen Hotdog&shy;fingers beans a batter</div></div>
+            <div class="tile"><div class="tile-text gen">Dead player on the leader board</div></div>
+            <div class="tile"><div id="free" class="tile-text">The Commissioner does a great job (free space)</div></div>
+            <div class="tile"><div class="tile-text gen">FEEDBACK DETECTED</div></div>
+            <div class="tile"><div class="tile-text gen">Someone steals home</div></div>
+
+            <div class="tile"><div class="tile-text gen">MAXIMUM BLASEBALL</div></div>
+            <div class="tile"><div class="tile-text gen">Peanut shenanigans</div></div>
+            <div class="tile"><div class="tile-text gen">BLASEBALL&shy;CARES IS OPE- BLASEBALL&shy;CARES IS ON A SIESTA!</div></div>
+            <div class="tile"><div class="tile-text gen">SHAME</div></div>
+            <div class="tile"><div class="tile-text gen">BNN says something completely false</div></div>
+
+            <div class="tile"><div class="tile-text gen">The Fridays beg everyone to get York down</div></div>
+            <div class="tile"><div class="tile-text gen">DOUBLE SHAME</div></div>
+            <div class="tile"><div class="tile-text gen">These birds hate blaseball!</div></div>
+            <div class="tile"><div class="tile-text gen">The Blooddrain gurgles!</div></div>
+            <div class="tile"><div class="tile-text gen">LGMBLDM but for a different team</div></div>
+
+        </div>
+        <div id="by">
+            By <a href="https://twitter.com/jrfbz" target="_blank">@jrfbz</a>,
+            who never looks back,<br class="desktop">
+            and <a href="https://twitter.com/spilliams" target="_blank">@spilliams</a>,
+            who STARES INTO THE SUN.<br class="desktop">
+            Additional ideas from <span id="contributors">@mackinithappen, @Jocelynbee, @MoistTalkers, @ElevenQuietSeas, Raulito, @p_doodler, @VanbaelFox, @lordcakespy, @blaseballsquid, @sixdogfriday, Dellainspace, @Centritide, bloopsadoop</span>... <a href="https://airtable.com/shrg5MMZw4NhcY6FE" target="_blank">and you?</a>
+        </div>
+    </div>
+    <div class="noprint left">
+    </div>
+    <div class="noprint right">
+        View in <button onclick="invertColors(false)">white on black</button> or
+        <button class="inverted" onclick="invertColors(true)">black on white</button>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="airtable.browser.js"></script>
+    <script src="bingo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+/* ---------
+ Fancy Shit
+--------- */
+
+@media print {
+    .noprint {
+        display: none;
+    }
+}
+
+/* -----
+  Sizes
+----- */
+/* sizes here are if user has no javascript */
+/*
+assume: window height 700px
+assume: aspect ratio 10/12
+card width and bingo height is 700*10/12
+title is 700*2/12
+colophon is 10% of final height
+final height is 700 / .90 = 778
+*/
+#card {
+    width: 583px;
+}
+
+#title {
+    height: 117px;
+}
+
+#title img {
+    margin-top: 11%;
+    margin-bottom: 2%;
+}
+
+#bingo {
+    height: 583px;
+    width: 100%;
+}
+
+#by {
+    height: 10%;
+    padding-top: 4.5%;
+}
+
+/* ----
+ Types
+---- */
+
+body, button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-decoration: none;
+    hyphens: auto;
+    text-align: center;
+}
+
+#title {
+    font-family: Lora, serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#by {
+    font-size: 11px;
+    line-height: 1.25;
+}
+
+.noprint, .noprint button {
+    font-size: 10px;
+}
+
+/* -----
+ Colors
+----- */
+
+body, button {
+    background: black;
+    color: white;
+}
+
+body.inverted, button.inverted {
+    background: white;
+    color: black;
+}
+
+a {
+    color: #ffeb57;
+}
+body.inverted a {
+    color: #ff0000;
+}
+a:hover {
+    color: white;
+}
+body.inverted a:hover {
+    color: black;
+}
+
+#bingo, button {
+    border-radius: 4px;
+}
+
+button {
+    border-style: none;
+}
+
+.tile:nth-child(25) {
+    border-bottom-right-radius: 4px;
+}
+
+/* -----
+ Layout
+----- */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0 none transparent;
+}
+
+body {
+    margin-bottom: 5%;
+}
+
+#card {
+    background-size: cover;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#title {
+    position: relative;
+    height: 100px;
+    line-height: 120px;
+}
+
+#bingo {
+    box-sizing: border-box;
+    border-width: 5px 0 0 5px;
+    border-style: solid;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.tile {
+    width: calc(20%);
+    height: calc(20%);
+    display: flex;
+    box-sizing: border-box;
+    border-width: 0 5px 5px 0;
+    border-style: solid;
+    padding: 5px;
+}
+
+.tile-text {
+    margin: auto;
+}
+
+.noprint {
+    position: absolute;
+    top: 10px;
+}
+.noprint.right {
+    right: 10px;
+}
+.noprint.left {
+    left: 10px;
+    padding: 4px 0; /* so the left one matches baseline with the right one and its buttons */
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+@media screen and (max-width: 570px) {
+    body, button {
+        font-size: 11px;
+        text-transform: unset;
+        letter-spacing: 0;
+    }
+
+    #by {
+        font-size: 8px;
+    }
+
+    #bingo {
+        border-width: 3px 0 0 3px;
+    }
+    .tile {
+        border-width: 0 3px 3px 0;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
