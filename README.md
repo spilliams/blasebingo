@@ -4,7 +4,7 @@ A blingo game about a blaseball game.
 
 This is a project by [@jrfbz](https://twitter.com/jrfbz) and [@spilliams](https://twitter.com/spilliams).
 
-It has one deployment: here, on github pages. This is managed through the CNAME file and some DNS on the domain side.
+It has one deployment: here, on github pages. This is managed through the CNAME file and some DNS on the domain side. Also maybe the `gh-pages` branch has something to do with it.
 
 To test locally, try `python -m http.server`.
 

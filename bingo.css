@@ -186,13 +186,16 @@ button:active {
 
 @media screen and (max-width: 570px) {
     body, button {
-        font-size: 11px;
-        text-transform: unset;
+        font-size: 9px;
         letter-spacing: 0;
     }
 
     #by {
         font-size: 8px;
+    }
+
+    #card {
+        margin-top: 20px;
     }
 
     #bingo {

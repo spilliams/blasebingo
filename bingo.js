@@ -45,7 +45,7 @@ function resize() {
 
     // title is the remainder of the original aspect ratio, minus 2 points
     titleP = ((aD - aN) / aD) - 0.02;
-    colophonP = (colophonP+2)/100;
+    colophonP = (colophonP+2)/100.0;
     // console.log(`title is ${titleP*h}px and colophon is ${colophonP*h}px`);
     $("#title").css({
         "height": `${titleP*h}px`,
