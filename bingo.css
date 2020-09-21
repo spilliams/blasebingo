@@ -15,9 +15,10 @@
 /*
 assume: window height 700px
 assume: aspect ratio 10/12
-card width and bingo height is 700*10/12
-title is 700*2/12
-colophon is 10% of final height
+card width and bingo height is 700*10/12 ( = 583)
+title is 2/12 of the 700 ( = 117)
+bingo is remainder of the 700 (583)
+colophon spills below the fold
 final height is 700 / .90 = 778
 */
 #card {
@@ -26,11 +27,7 @@ final height is 700 / .90 = 778
 
 #title {
     height: 117px;
-}
-
-#title img {
-    margin-top: 11%;
-    margin-bottom: 2%;
+    line-height: 140px;
 }
 
 #bingo {
@@ -39,7 +36,7 @@ final height is 700 / .90 = 778
 }
 
 #by {
-    height: 10%;
+    width: 100%;
     padding-top: 4.5%;
 }
 
